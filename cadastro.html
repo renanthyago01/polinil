@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintor Polinil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header style="background-color: #d90715;">
+        <img src="img/polinil pintado.png" style="width: 20%; height: 20%;">
+        <h1>Pagina de cadastro</h1>
+    </header>
+
+    <a href="index.html"><button class="submit-rating">Home</button></a>
+
+    <section class="painters-list">
+        <form action="">
+            <p>Nome<input type="text" id="name" name="name" required minlength="4"/></p>
+            <p>Cpf <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF no formato: xxx.xxx.xxx-xx"></p>
+            <p>Telefone <input type="tel" id="phone" name="phone" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"></p>
+            <p>Quantos anos na profissão ? <input type="number" name="anos" min="0" max="70"></p>
+            <div style="background-color: rgb(255, 255, 255); margin-top: 15px;">
+                <p>Quais trabalhos vc executa?</p>
+                <div>
+                    <input type="checkbox" id="textura" name="textura"/>
+                    <label for="textura">Textura</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="grafiato" name="grafiato" />
+                    <label for="grafiato">Grafiato</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="interna" name="interna" />
+                    <label for="interna">Pintura interna</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="externa" name="externa" />
+                    <label for="externa">Pintura externa</label>
+                </div>
+
+
+            </div>
+        </form>
+
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
